@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Button from './Button'
 import logo from './logo.svg';
 import './App.css';
 
@@ -19,6 +20,12 @@ class App extends Component {
           >
             Learn React
           </a>
+          <Button
+            buttonType="button"
+            onClick={() => console.log('yeah, clicked reason button component')}
+          >
+            <span>oh Boy!</span>
+          </Button>
         </header>
       </div>
     );
